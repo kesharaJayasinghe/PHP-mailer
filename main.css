@@ -1,0 +1,184 @@
+/*Global Start*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Lucida", sans-serif;
+    color: #eee;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #4568dc, #b06ab3);
+    background-size: cover;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+/*Global End
+
+/*Reusable Start*/
+.container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.section-heading h1 {
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section-heading h1::before {
+    width: 10rem;
+    height: 3px;
+    border-radius: 0.8rem;
+}
+
+.section-heading h1::after {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 100%;
+    bottom: -5.6rem;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-text h1 {
+    font-size: 6rem;
+    font-family: "oswaldregular", sans-serif;
+    background: linear-gradient(to top, #36d1dc, #5b86e5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
+
+.header-text h6 {
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 400;
+}
+
+.section-heading h6 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+/*Reusable End*/
+
+/*Header Start*/
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.header-text h1 {
+    font-size: 6rem;
+    font-family: "Lucida", sans-serif;
+    background: linear-gradient(to bottom, #222a2b, #4a4a4b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+}
+
+.header-text h6 {
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 500;
+}
+
+.sdwn::after {
+    content: ' \25BC';
+}
+
+/*Header End*/
+
+/*Contact Start*/
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    border: none;
+    outline-style: none;
+    border-radius: 1rem;
+}
+
+input[type="submit"] {
+    width: initial;
+    background-color: #00c0fa;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+    color: #16162d;
+    background-color: #0099ff;
+}
+/*Contact End*/
